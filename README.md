@@ -1,11 +1,8 @@
-# ServerStatus-Hotaru
+# ServerStatus
 云探针、多服务器探针、云监控、多服务器云监控
 
-基于ServerStatus-Toyo最新版本稍作修改，不太会脚本什么的，前端也垃圾。见谅。
+本分支基于ServerStatus-Hotaru最新版本重写前端！！后端内容几乎没动！！！。
 
-默认图片素材来源: Pixiv:  86597206 默认背景来源：nisekoi.jp
-
-如需用做商业用途请更换主题图片。
 
 For commercial use, please replace the images.
 
@@ -15,22 +12,17 @@ If some of the assets used in this repo infringe your copyright, please contact 
 
 ## 特性
 
-前端基于Vue 3.0和SemanticUI制作，如需修改前端建议自行修改打包（也可以尝试直接格式化打包后的js/css文件后修改，但是不建议）：
+前端基于 React17 和 Ant design制作
 
-前端开源地址：https://github.com/CokeMine/Hotaru_theme
 
 客户端支持Python版本：Python2.7 - Python3.7
 
-客户端可以选择使用vnStat按月计算流量，会自动编译安装最新版本vnStat。如不使用vnStat，则默认计算流量方式为重启后流量清零。
 
-## 安装方法
-
-请见：https://www.cokemine.com/serverstatus-hotaru.html
 
 服务端：
 
 ```bash
-wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh
+wget https://raw.githubusercontent.com/Anaple/ServerStatus-Hotaru/master/status.sh
 bash status.sh s
 ```
 
@@ -65,7 +57,7 @@ bash status.sh c
 
 ```
 apt install wget unzip curl make build-essential
-wget https://github.com/CokeMine/ServerStatus-Hotaru/archive/master.zip
+wget https://github.com/Anaple/ServerStatus-Hotaru/archive/master.zip
 unzip master.zip
 cd /root/ServerStatus-Hotaru-master/server
 make #手动编译生成二进制文件
@@ -92,16 +84,15 @@ Linux：
 ```
 apt install python3 python3-pip wget
 pip3 install psutil
-wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/clients/status-psutil.py
+wget https://raw.githubusercontent.com/Anaple/ServerStatus-Hotaru/master/clients/status-psutil.py
 vim status-psutil.py #修改客户端配置文件
 python3 status-psutil.py
 ```
 
-## 效果演示
 
-![RktuH.png](https://img.ams1.imgbed.xyz/2021/02/04/1nfJF.png)
 
 ## 相关开源项目 ： 
+* ServerStatus-Hotaru: https://github.com/CokeMine/ServerStatus-Hotaru
 * ServerStatus-Toyo：https://github.com/ToyoDAdoubiBackup/ServerStatus-Toyo
 * ServerStatus：https://github.com/BotoX/ServerStatus
 * mojeda's ServerStatus: https://github.com/mojeda/ServerStatus
