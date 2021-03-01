@@ -900,6 +900,7 @@ Update_ServerStatus_server() {
   check_installed_server_status
   check_pid_server
   [[ -n ${PID} ]] && /etc/init.d/status-server stop
+  rm -rf /usr/local/ServerStatus/web
   Download_Server_Status_server
   rm -rf /etc/init.d/status-server
   Service_Server_Status_server
