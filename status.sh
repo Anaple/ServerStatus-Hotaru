@@ -5,11 +5,11 @@ export PATH
 #=================================================
 #	System Required: CentOS/Debian/Ubuntu
 #	Description: ServerStatus client + server
-#	Version: Test v0.1.2
+#	Version: Test v0.1.1
 #	Author: Toyo,Modified by APTX
 #=================================================
 
-sh_ver="0.1.2"
+sh_ver="0.1.1"
 filepath=$(
   cd "$(dirname "$0")" || exit
   pwd
@@ -899,7 +899,6 @@ Install_ServerStatus_client() {
 Update_ServerStatus_server() {
   check_installed_server_status
   check_pid_server
-  rm -rf /usr/local/ServerStatus/web
   [[ -n ${PID} ]] && /etc/init.d/status-server stop
   Download_Server_Status_server
   rm -rf /etc/init.d/status-server
