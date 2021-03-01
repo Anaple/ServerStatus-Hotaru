@@ -5,7 +5,7 @@ export PATH
 #=================================================
 #	System Required: CentOS/Debian/Ubuntu
 #	Description: ServerStatus client + server
-#	Version: Test v0.1.1
+#	Version: Test v0.1.2
 #	Author: Toyo,Modified by APTX
 #=================================================
 
