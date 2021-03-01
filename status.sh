@@ -9,7 +9,7 @@ export PATH
 #	Author: Toyo,Modified by APTX
 #=================================================
 
-sh_ver="0.1.1"
+sh_ver="0.1.2"
 filepath=$(
   cd "$(dirname "$0")" || exit
   pwd
