@@ -902,7 +902,7 @@ Update_ServerStatus_server() {
   [[ -n ${PID} ]] && /etc/init.d/status-server stop
   rm -rf "${web_file}"
   Download_Server_Status_server
-  mv "/tmp/ServerStatus-Hotaru-master/web" "${web_file}"
+  mv "/tmp/ServerStatus-Hotaru-master/web" "${file}"
   rm -rf /etc/init.d/status-server
   Service_Server_Status_server
   Start_ServerStatus_server
