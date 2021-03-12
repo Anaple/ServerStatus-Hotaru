@@ -216,7 +216,7 @@ if __name__ == '__main__':
                 array['swap_used'] = SwapTotal - SwapFree
                 array['hdd_total'] = HDDTotal
                 array['hdd_used'] = HDDUsed
-                array['cpu'] = CPU
+                array['cpu'] = CPU+"888"
                 array['network_rx'] = NetRx
                 array['network_tx'] = NetTx
                 array['network_in'] = NET_IN
